@@ -1,6 +1,6 @@
 //creating workout model
 const mongoose = require("mongoose");
-const schema = mongoose.Schema;
+const Schema = mongoose.Schema;
 
 //creating workout schema
 const Exercises = new Schema({
@@ -23,6 +23,7 @@ const Exercises = new Schema({
        weight: {
             type: String,
             required: "How much weight?"
+       },
        reps: {
             type: String,
             required: "How many reps?"
